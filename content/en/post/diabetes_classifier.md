@@ -49,14 +49,14 @@ The [jupyter notebook](https://github.com/jcummingsutk/diabetes_ml_classifier/bl
         * Recall: 74%
         * Accuracy: 81%
     * One-Hot on just Age
-        * Recall: 73%
-        * Accuracy: 80%
+        * Recall: 74%
+        * Accuracy: 81%
     * One-Hot on Age, BMI
-        * Recall: 61%
-        * Accuracy: 77%
+        * Recall: 74%
+        * Accuracy: 78%
     * One-Hot on just BMI
-        * Recall: 65%
-        * Accuracy: 77%
+        * Recall: 68%
+        * Accuracy: 79%
 
 
 - Logistic Regression:
@@ -73,9 +73,6 @@ The [jupyter notebook](https://github.com/jcummingsutk/diabetes_ml_classifier/bl
         * Recall: 81%
         * Accuracy: 76%
 
-- Random Forest:
-    * Recall: 69%
-    * Accuarcy: 80%
 
 # Shortened Notebook
 
@@ -106,13 +103,13 @@ summary_of_model(grid_clf_boost, X_train, X_test, y_train, y_test, thresh)
 
 
 
-![png](img/output_16_1.png)
+![png](/images/output_16_1.png)
 
 
 
 
 
-![png](img/output_16_2.png)
+![png](/images/output_16_2.png)
 
 
 ## Summary of Logistic Regression
@@ -142,10 +139,10 @@ summary_of_model(grid_clf_log, X_train, X_test, y_train, y_test, thresh)
 
 
 
-![png](img/output_22_1.png)
+![png](/images/output_22_1.png)
 
 
 
 
 
-![png](img/output_22_2.png)
+![png](/images/output_22_2.png)
