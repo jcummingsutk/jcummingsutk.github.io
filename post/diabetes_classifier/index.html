@@ -1,0 +1,247 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+<title>A Diabetes Classifier | Home</title>
+<meta name=viewport content="width=device-width,minimum-scale=1">
+<meta name=description content="Goal: The goal of this project is to develop a good conservative diabetes classifier. Conservative here is in the sense that we&rsquo;d like to have a maximize recall. Good is in the sense that we still want our classifier to have reasonable accuracy.
+Results: A number of different classifiers with a number of feature engineering approaches performing at varying recall levels. The Logistic Regression model resulting from this project performs with 81 percent recall and 77 percent accuracy on the test set, and this model is deployed as a flask application on Heroku.">
+<meta name=generator content="Hugo 0.91.2">
+<meta name=ROBOTS content="NOINDEX, NOFOLLOW">
+<link rel=stylesheet href=https://jcummingsutk.github.io/ananke/css/main.min.css>
+<meta property="og:title" content="A Diabetes Classifier">
+<meta property="og:description" content="Goal: The goal of this project is to develop a good conservative diabetes classifier. Conservative here is in the sense that we&rsquo;d like to have a maximize recall. Good is in the sense that we still want our classifier to have reasonable accuracy.
+Results: A number of different classifiers with a number of feature engineering approaches performing at varying recall levels. The Logistic Regression model resulting from this project performs with 81 percent recall and 77 percent accuracy on the test set, and this model is deployed as a flask application on Heroku.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jcummingsutk.github.io/post/diabetes_classifier/"><meta property="article:section" content="post">
+<meta property="og:site_name" content="Home">
+<meta itemprop=name content="A Diabetes Classifier">
+<meta itemprop=description content="Goal: The goal of this project is to develop a good conservative diabetes classifier. Conservative here is in the sense that we&rsquo;d like to have a maximize recall. Good is in the sense that we still want our classifier to have reasonable accuracy.
+Results: A number of different classifiers with a number of feature engineering approaches performing at varying recall levels. The Logistic Regression model resulting from this project performs with 81 percent recall and 77 percent accuracy on the test set, and this model is deployed as a flask application on Heroku.">
+<meta itemprop=wordCount content="539">
+<meta itemprop=keywords content><meta name=twitter:card content="summary">
+<meta name=twitter:title content="A Diabetes Classifier">
+<meta name=twitter:description content="Goal: The goal of this project is to develop a good conservative diabetes classifier. Conservative here is in the sense that we&rsquo;d like to have a maximize recall. Good is in the sense that we still want our classifier to have reasonable accuracy.
+Results: A number of different classifiers with a number of feature engineering approaches performing at varying recall levels. The Logistic Regression model resulting from this project performs with 81 percent recall and 77 percent accuracy on the test set, and this model is deployed as a flask application on Heroku.">
+</head>
+<body class="ma0 avenir bg-near-white">
+<header class="cover bg-top" style=background-image:url(https://jcummingsutk.github.io/images/donuts.jpg)>
+<div class="pb3-m pb6-l bg-black-60">
+<nav class="pv3 ph3 ph4-ns" role=navigation>
+<div class="flex-l justify-between items-center center">
+<a href=https://jcummingsutk.github.io/ class="f3 fw2 hover-white no-underline white-90 dib">
+Home
+</a>
+<div class="flex-l items-center">
+<ul class="pl0 mr3">
+<li class="list f5 f4-ns fw4 dib pr3">
+<a class="hover-white no-underline white-90" href=https://jcummingsutk.github.io/contact/ title="Get in Touch page">
+Get in Touch
+</a>
+</li>
+<li class="list f5 f4-ns fw4 dib pr3">
+<a class="hover-white no-underline white-90" href=https://jcummingsutk.github.io/post/ title="Projects page">
+Projects
+</a>
+</li>
+</ul>
+<div class=ananke-socials>
+</div>
+</div>
+</div>
+</nav>
+<div class="tc-l pv6 ph3 ph4-ns">
+<h1 class="f2 f1-l fw2 white-90 mb0 lh-title">A Diabetes Classifier</h1>
+</div>
+</div>
+</header>
+<main class=pb7 role=main>
+<article class="flex-l flex-wrap justify-between mw8 center ph3">
+<header class="mt4 w-100">
+<aside class="instapaper_ignoref b helvetica tracked">
+PROJECTS
+</aside>
+<div id=sharing class="mt3 ananke-socials">
+</div>
+<h1 class="f1 athelas mt3 mb1">A Diabetes Classifier</h1>
+</header>
+<div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><strong>Goal</strong>: The goal of this project is to develop a good conservative diabetes classifier. Conservative here is in the sense that we&rsquo;d like to have a maximize recall. Good is in the sense that we still want our classifier to have reasonable accuracy.</p>
+<p><strong>Results</strong>: A number of different classifiers with a number of feature engineering approaches performing at varying recall levels. The Logistic Regression model resulting from this project performs with 81 percent recall and 77 percent accuracy on the test set, and this model is deployed as a flask application on Heroku. Feel free to check it out in the links below.</p>
+<h2 id=some-useful-links>Some useful links</h2>
+<ul>
+<li><a href=https://diabetes-ml-classifier-jc.herokuapp.com/>The Heroku application</a> that is deployed from this project</li>
+<li><a href=https://github.com/jcummingsutk/diabetes_ml_classifier>The GitHub Repo</a></li>
+<li><a href=https://github.com/jcummingsutk/diabetes_ml_classifier/blob/master/diabetes_classifier.ipynb>The jupyter notebook</a></li>
+<li><a href=https://www.kaggle.com/mathchi/diabetes-data-set>The diabetes dataset</a></li>
+</ul>
+<h2 id=discussion>Discussion</h2>
+<p>The <a href=https://github.com/jcummingsutk/diabetes_ml_classifier/blob/master/diabetes_classifier.ipynb>jupyter notebook</a> is organized as follows:</p>
+<ol>
+<li>EDA, Understanding the Data</li>
+</ol>
+<ul>
+<li>Clean Data</li>
+<li>Impute Missing Data</li>
+<li>Data Visualization</li>
+<li>Selecting Features</li>
+<li>Ideas for Introduction of Features</li>
+</ul>
+<ol start=2>
+<li>Model Building Idea, Functions for Visualization</li>
+</ol>
+<ul>
+<li>Conservative model building philosophy</li>
+<li>Testing and visualizing different models, including:</li>
+</ul>
+<ol start=3>
+<li>Model Building and Feature Experimentation</li>
+</ol>
+<ul>
+<li>Many models tested with all data scaled. Classifiers included are
+<ul>
+<li>Dummy classifier, for comparison.</li>
+<li>Gradient Boosting Classifier</li>
+<li>Logistic Regression</li>
+<li>Support Vector Machine</li>
+<li>Random Forest</li>
+<li>K Nearest Neighbors</li>
+<li>Decision Tree Classifier</li>
+</ul>
+</li>
+<li>One-Hot Encoding on age, then on age and BMI, then just om BMI with gradient boosting classifiers and logistic regression tested.</li>
+</ul>
+<h2 id=summary>Summary</h2>
+<ul>
+<li>
+<p>Out of the models that are tested, the following produced reasonable results: Gradient Boosting, Logistic Regression, and Random Forest. It appears that the one-hot encoding does provide minor improvement for gradient boosting classification, but not for logistic regression. The following is a summary of the models (all with numerical data) on the test set (with a random state of 0):</p>
+</li>
+<li>
+<p>Gradient Boosting:</p>
+<ul>
+<li>All data numerical:
+<ul>
+<li>Recall: 63%</li>
+<li>Accuracy: 77%</li>
+</ul>
+</li>
+<li>One-Hot on just Age
+<ul>
+<li>Recall: 73%</li>
+<li>Accuracy: 80%</li>
+</ul>
+</li>
+<li>One-Hot on Age, BMI
+<ul>
+<li>Recall: 61%</li>
+<li>Accuracy: 77%</li>
+</ul>
+</li>
+<li>One-Hot on just BMI
+<ul>
+<li>Recall: 65%</li>
+<li>Accuracy: 77%</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Logistic Regression:</p>
+<ul>
+<li>All data numerical:
+<ul>
+<li>Recall: 81%</li>
+<li>Accuracy: 76%</li>
+</ul>
+</li>
+<li>One-Hot on just Age
+<ul>
+<li>Recall: 81%</li>
+<li>Accuracy: 78%</li>
+</ul>
+</li>
+<li>One-Hot on Age, BMI
+<ul>
+<li>Recall: 79%</li>
+<li>Accuracy: 79%</li>
+</ul>
+</li>
+<li>One-Hot on just BMI
+<ul>
+<li>Recall: 81%</li>
+<li>Accuracy: 76%</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Random Forest:</p>
+<ul>
+<li>Recall: 69%</li>
+<li>Accuarcy: 80%</li>
+</ul>
+</li>
+</ul>
+<h1 id=shortened-notebook>Shortened Notebook</h1>
+<h2 id=summary-of-gradient-boosting-model>Summary of Gradient Boosting Model</h2>
+<p>Below you&rsquo;ll find a summary of the gradient boosting model including precision, recall information and a confusion matrix.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>summary_of_model(grid_clf_boost, X_train, X_test, y_train, y_test, thresh)
+</code></pre></div><pre><code>              precision    recall  f1-score   support
+
+           0       0.87      0.84      0.85       130
+           1       0.69      0.74      0.71        62
+
+    accuracy                           0.81       192
+   macro avg       0.78      0.79      0.78       192
+weighted avg       0.81      0.81      0.81       192
+
+Recall of diabetes on the training set: 0.81
+Accuracy on the training set: 0.80
+Recall of diabetes class on the test set: 0.74
+Accuracy on the test set: 0.81
+[[109  21]
+ [ 16  46]]
+</code></pre>
+<p><img src=img/output_16_1.png alt=png></p>
+<p><img src=img/output_16_2.png alt=png></p>
+<h2 id=summary-of-logistic-regression>Summary of Logistic Regression</h2>
+<p>Below you&rsquo;ll find a summary of the logistic regression model including precision, recall information and a confusion matrix.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>summary_of_model(grid_clf_log, X_train, X_test, y_train, y_test, thresh)
+</code></pre></div><pre><code>              precision    recall  f1-score   support
+
+           0       0.90      0.72      0.80       130
+           1       0.59      0.84      0.69        62
+
+    accuracy                           0.76       192
+   macro avg       0.75      0.78      0.75       192
+weighted avg       0.80      0.76      0.77       192
+
+Recall of diabetes on the training set: 0.81
+Accuracy on the training set: 0.73
+Recall of diabetes class on the test set: 0.84
+Accuracy on the test set: 0.76
+[[94 36]
+ [10 52]]
+</code></pre>
+<p><img src=img/output_22_1.png alt=png></p>
+<p><img src=img/output_22_2.png alt=png></p>
+<ul class=pa0>
+</ul>
+<div class="mt6 instapaper_ignoref">
+</div>
+</div>
+<aside class="w-30-l mt6-l">
+</aside>
+</article>
+</main>
+<footer class="bg-black bottom-0 w-100 pa3" role=contentinfo>
+<div class="flex justify-between">
+<a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href=https://jcummingsutk.github.io>
+&copy; Home 2022
+</a>
+<div>
+<div class=ananke-socials>
+</div></div>
+</div>
+</footer>
+</body>
+</html>
