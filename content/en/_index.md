@@ -1,6 +1,6 @@
 ---
 title: "John Cummings's Portfolio"
-featured_image: '/images/equations.jpg'
-description: "The last theme you'll ever need. Maybe."
+featured_image: '/images/shapes.jpg'
+#description: ""
 ---
-Welcome to my blog with some of my work in progress. I've been working on this book idea. You can read some of the chapters below.
+Welcome to my personal data science and analytics portfolio. I have been building projects to make a variety of data-centric solutions. Please, take a look around. 

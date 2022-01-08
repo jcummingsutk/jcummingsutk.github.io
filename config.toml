@@ -14,7 +14,7 @@ canonifyURLS = true
 
 [languages]
   [languages.en]
-    title = "My blog"
+    title = "Home"
     weight = 1
     contentDir = "content/en"
 
