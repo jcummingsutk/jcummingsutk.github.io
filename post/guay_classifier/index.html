@@ -4,21 +4,21 @@
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <title>A Rebecca Guay Artist Classifier | Home</title>
 <meta name=viewport content="width=device-width,minimum-scale=1">
-<meta name=description content="Some Useful links  this project&rsquo;s github repo The jupyter notebook for this project The python mtg sdk Scryfall api used to retrieve images A useful paper on artist identification Rebecca Guay&rsquo;s Website  Summary of the project Magic: The Gathering (mtg) is a collectible card game developed by Richard Garfield that can be simply summarized as &ldquo;Dungeons and Dragons with Cards&rdquo;. One of the great features of it is the great art that comes with it.">
+<meta name=description content="Goal: The purpose for this project is twofold. Immediately, this is a curiosity project, as I wanted to see if I could use techniques I&rsquo;ve learned from convolutional neural networks (CNN) not to just identify objects, but also artist styles. Second, it serves as a precursor to one day creating a neural transfer project which takes an input of art and &ldquo;guayifies&rdquo; it, turning it into art in the style of Rebecca Guay.">
 <meta name=generator content="Hugo 0.91.2">
 <meta name=ROBOTS content="NOINDEX, NOFOLLOW">
 <link rel=stylesheet href=https://jcummingsutk.github.io/ananke/css/main.min.css>
 <meta property="og:title" content="A Rebecca Guay Artist Classifier">
-<meta property="og:description" content="Some Useful links  this project&rsquo;s github repo The jupyter notebook for this project The python mtg sdk Scryfall api used to retrieve images A useful paper on artist identification Rebecca Guay&rsquo;s Website  Summary of the project Magic: The Gathering (mtg) is a collectible card game developed by Richard Garfield that can be simply summarized as &ldquo;Dungeons and Dragons with Cards&rdquo;. One of the great features of it is the great art that comes with it.">
+<meta property="og:description" content="Goal: The purpose for this project is twofold. Immediately, this is a curiosity project, as I wanted to see if I could use techniques I&rsquo;ve learned from convolutional neural networks (CNN) not to just identify objects, but also artist styles. Second, it serves as a precursor to one day creating a neural transfer project which takes an input of art and &ldquo;guayifies&rdquo; it, turning it into art in the style of Rebecca Guay.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://jcummingsutk.github.io/post/guay_classifier/"><meta property="article:section" content="post">
 <meta property="og:site_name" content="Home">
 <meta itemprop=name content="A Rebecca Guay Artist Classifier">
-<meta itemprop=description content="Some Useful links  this project&rsquo;s github repo The jupyter notebook for this project The python mtg sdk Scryfall api used to retrieve images A useful paper on artist identification Rebecca Guay&rsquo;s Website  Summary of the project Magic: The Gathering (mtg) is a collectible card game developed by Richard Garfield that can be simply summarized as &ldquo;Dungeons and Dragons with Cards&rdquo;. One of the great features of it is the great art that comes with it.">
-<meta itemprop=wordCount content="328">
+<meta itemprop=description content="Goal: The purpose for this project is twofold. Immediately, this is a curiosity project, as I wanted to see if I could use techniques I&rsquo;ve learned from convolutional neural networks (CNN) not to just identify objects, but also artist styles. Second, it serves as a precursor to one day creating a neural transfer project which takes an input of art and &ldquo;guayifies&rdquo; it, turning it into art in the style of Rebecca Guay.">
+<meta itemprop=wordCount content="344">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="A Rebecca Guay Artist Classifier">
-<meta name=twitter:description content="Some Useful links  this project&rsquo;s github repo The jupyter notebook for this project The python mtg sdk Scryfall api used to retrieve images A useful paper on artist identification Rebecca Guay&rsquo;s Website  Summary of the project Magic: The Gathering (mtg) is a collectible card game developed by Richard Garfield that can be simply summarized as &ldquo;Dungeons and Dragons with Cards&rdquo;. One of the great features of it is the great art that comes with it.">
+<meta name=twitter:description content="Goal: The purpose for this project is twofold. Immediately, this is a curiosity project, as I wanted to see if I could use techniques I&rsquo;ve learned from convolutional neural networks (CNN) not to just identify objects, but also artist styles. Second, it serves as a precursor to one day creating a neural transfer project which takes an input of art and &ldquo;guayifies&rdquo; it, turning it into art in the style of Rebecca Guay.">
 </head>
 <body class="ma0 avenir bg-near-white">
 <header class="cover bg-top" style=background-image:url(https://jcummingsutk.github.io/images/guay_spellstutter.jpg)>
@@ -61,7 +61,9 @@ PROJECTS
 </div>
 <h1 class="f1 athelas mt3 mb1">A Rebecca Guay Artist Classifier</h1>
 </header>
-<div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id=some-useful-links>Some Useful links</h2>
+<div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><strong>Goal</strong>: The purpose for this project is twofold. Immediately, this is a curiosity project, as I wanted to see if I could use techniques I&rsquo;ve learned from convolutional neural networks (CNN) not to just identify objects, but also artist styles. Second, it serves as a precursor to one day creating a neural transfer project which takes an input of art and &ldquo;guayifies&rdquo; it, turning it into art in the style of Rebecca Guay.</p>
+<p><strong>Results</strong>: A classifier that is 99% accurate in identifying Rebecca Guay&rsquo;s art against other art in Magic: The Gathering.</p>
+<h2 id=some-useful-links>Some Useful links</h2>
 <ul>
 <li><a href=https://github.com/jcummingsutk/art_transformer>this project&rsquo;s github repo</a></li>
 <li><a href=https://github.com/jcummingsutk/art_transformer/blob/master/guay_classifier_functional.ipynb>The jupyter notebook for this project</a></li>
@@ -70,9 +72,8 @@ PROJECTS
 <li><a href=http://cs231n.stanford.edu/reports/2017/pdfs/406.pdf>A useful paper on artist identification</a></li>
 <li><a href=http://www.rebeccaguay.com/>Rebecca Guay&rsquo;s Website</a></li>
 </ul>
-<h2 id=summary-of-the-project>Summary of the project</h2>
+<h2 id=discussion>Discussion</h2>
 <p>Magic: The Gathering (mtg) is a collectible card game developed by Richard Garfield that can be simply summarized as &ldquo;Dungeons and Dragons with Cards&rdquo;. One of the great features of it is the great art that comes with it. Personally, I really enjoy art from Rebecca Guay. That&rsquo;s her artwork for Spellstutter Sprite above in the splash.</p>
-<p><strong>Goal</strong>: The purpose for this project is twofold. Immediately, this is a curiousity project, as I wanted to see if I could use techniques I&rsquo;ve learned from convolutional neural networks (CNN) not to just identify objects, but also artist styles. Second, it serves as a precursor to one day creating a nueral transfer project which takes an input of art and &ldquo;guayifies&rdquo; it, turning it into art in the style of Rebecca Guay.</p>
 <p>As mentioned above, this notebook builds a classifier that identifies if a particular piece of art is by Rebecca Guay. I first write a script to find the ids of the artwork by Rebecca Guay, along with the id of other magic cards using the mtg sdk. Once those ids are obtained, I get uris for all of the art done by Guay and not done by Guay using the api from <a href=https://scryfall.com/docs/api/cards>scryfall</a>.</p>
 <p>Once obtained, using the functional api of TensorFlow I detach the top of the ResNet50 CNN trained with imagenet weights and freeze those weights. I attach a dense layer and a sigmoid layer to the CNN and use it for classification. Greater than 99% accuracy is obtained on the test set.</p>
 <p>The results of this project could more generally be adapted to produce an artist detection application, or an artist selection application where the user takes photos of the art that decorates their walls and can suggest similar artists.</p>

@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Home">
 <meta itemprop=name content="Predicting Housing Assistance Recipients">
 <meta itemprop=description content="Description">
-<meta itemprop=wordCount content="861">
+<meta itemprop=wordCount content="860">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Predicting Housing Assistance Recipients">
 <meta name=twitter:description content="Description">
@@ -64,18 +64,8 @@ PROJECTS
 </div>
 <h1 class="f1 athelas mt3 mb1">Predicting Housing Assistance Recipients</h1>
 </header>
-<div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Goal: Develop a predictor for recipients of the Emergency Rent and Utility Assistance program in Fulton County.</p>
-<p>Results: A logistic regression and gradient boosting classifier that are 77% and 78% accurate on the test data set, respectively, with a geographical interpretable logistic regression coefficients. A heatmap interpretation of these coefficients corresponding to the location data is also implemented through the google maps python package.</p>
-<h2 id=summary>Summary</h2>
-<p>The Emergency Rent and Utility Assistance (ERA) program is a program throughout the united states that assists families that are in need of emergency assistance for rent and utilities resulting from the COVID-19 pandemic. Residents have to meet eligibility requirements by the federal government, including</p>
-<ul>
-<li>One or more individuals within the household has qualified for unemployment benefits or experienced a reduction in household income, incurred significant costs, or experienced other financial hardship due, directly or indirectly, to the COVID-19 outbreak;</li>
-<li>One or more individuals within the household can demonstrate a risk of experiencing homelessness or housing instability; and</li>
-<li>The household’s income is at or below 80% of the area median income.</li>
-</ul>
-<p>An initial exploration of the data shows that when the payment program pays out, it takes on average 100 days for the person to get the money. This is a long time to wait for someone who is struggling due to the pandemic!</p>
-<p>With the above details in mind, this project aims to answer the question will I receive assistance from the ERA program?</p>
-<p>Below are some links and discussion of the 77% and 78% accurate logistic regression and gradient boosting classifiers that is built for the ERA program applicants.</p>
+<div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><strong>Goal</strong>: Develop a predictor for recipients of the Emergency Rent and Utility Assistance program in Fulton County.</p>
+<p><strong>Results</strong>: A logistic regression and gradient boosting classifier that are 77% and 78% accurate on the test data set, respectively, with a geographical interpretable logistic regression coefficients. A heatmap interpretation of these coefficients corresponding to the location data is also implemented through the google maps python package.</p>
 <h2 id=useful-links>Useful Links</h2>
 <p>Check out the to see the code for the project described below.</p>
 <p>Some useful links:</p>
@@ -97,6 +87,15 @@ PROJECTS
 </li>
 </ul>
 <h2 id=discussion>Discussion</h2>
+<p>The Emergency Rent and Utility Assistance (ERA) program is a program throughout the united states that assists families that are in need of emergency assistance for rent and utilities resulting from the COVID-19 pandemic. Residents have to meet eligibility requirements by the federal government, including</p>
+<ul>
+<li>One or more individuals within the household has qualified for unemployment benefits or experienced a reduction in household income, incurred significant costs, or experienced other financial hardship due, directly or indirectly, to the COVID-19 outbreak;</li>
+<li>One or more individuals within the household can demonstrate a risk of experiencing homelessness or housing instability; and</li>
+<li>The household’s income is at or below 80% of the area median income.</li>
+</ul>
+<p>An initial exploration of the data shows that when the payment program pays out, it takes on average 100 days for the person to get the money. This is a long time to wait for someone who is struggling due to the pandemic!</p>
+<p>With the above details in mind, this project aims to answer the question will I receive assistance from the ERA program?</p>
+<p>Below are some links and discussion of the 77% and 78% accurate logistic regression and gradient boosting classifiers that is built for the ERA program applicants.</p>
 <p>There are a number of oddities in these data. I have contacted the data set owner to try to gain insight into the oddities, but have not received a reply. Also, the documentation is very poor. There are columns which are unclear. For example, there is a column for funding total amount, total assistance approved, and ams amount (which is the amount of the check given) and they all can differ from one another. Additionally, both the data analysis and the logistic regression predictor indicate those with a lower housing ami ratio (ratio of their rent to average locally) have a smaller chance of receiving aid. Why? People with less money likely need more aid. My hypothesis that could explain this is that there are other data that are not included that are influencing the decision. For example, there is no data indicating a recent job loss. If one lost their job and had higher rent requirements, then perhaps they would likely be approved for aid. However, if someone still kept their job and had low rent requirements, perhaps this program is not applicable to them.</p>
 <p>There are some insights that align nicely with reality. In the data analysis and in the logistic regression predictor, higher household size indicates a larger chance of receiving aid. Also, the program specifically mentions that this aid is for non-Atlanta residents in the Fulton county area (much of Fulton county contains Atlanta), and the data and the logistic regression predictor both reflect this fact.</p>
 <p>Also optimistically we find that the logistic regression coefficients are large in magnitude for much of the location data. On visualizing this with a heatmap, we find that the areas with the higher coefficients correspond to parts of the poorer regions of the area.</p>
