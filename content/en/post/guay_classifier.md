@@ -6,6 +6,10 @@ featured_image: "/images/guay_spellstutter.jpg"
 title: "A Rebecca Guay Artist Classifier"
 ---
 
+**Goal**: The purpose for this project is twofold. Immediately, this is a curiosity project, as I wanted to see if I could use techniques I've learned from convolutional neural networks (CNN) not to just identify objects, but also artist styles. Second, it serves as a precursor to one day creating a neural transfer project which takes an input of art and "guayifies" it, turning it into art in the style of Rebecca Guay.
+
+**Results**: A classifier that is 99% accurate in identifying Rebecca Guay's art against other art in Magic: The Gathering.
+
 ## Some Useful links
 - [this project's github repo](https://github.com/jcummingsutk/art_transformer)
 - [The jupyter notebook for this project](https://github.com/jcummingsutk/art_transformer/blob/master/guay_classifier_functional.ipynb)
@@ -15,10 +19,8 @@ title: "A Rebecca Guay Artist Classifier"
 - [Rebecca Guay's Website](http://www.rebeccaguay.com/)
 
 
-## Summary of the project
+## Discussion
 Magic: The Gathering (mtg) is a collectible card game developed by Richard Garfield that can be simply summarized as "Dungeons and Dragons with Cards". One of the great features of it is the great art that comes with it. Personally, I really enjoy art from Rebecca Guay. That's her artwork for Spellstutter Sprite above in the splash.
-
-**Goal**: The purpose for this project is twofold. Immediately, this is a curiousity project, as I wanted to see if I could use techniques I've learned from convolutional neural networks (CNN) not to just identify objects, but also artist styles. Second, it serves as a precursor to one day creating a nueral transfer project which takes an input of art and "guayifies" it, turning it into art in the style of Rebecca Guay.
 
 As mentioned above, this notebook builds a classifier that identifies if a particular piece of art is by Rebecca Guay. I first write a script to find the ids of the artwork by Rebecca Guay, along with the id of other magic cards using the mtg sdk. Once those ids are obtained, I get uris for all of the art done by Guay and not done by Guay using the api from [scryfall](https://scryfall.com/docs/api/cards).
 

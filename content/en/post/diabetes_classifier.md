@@ -8,7 +8,7 @@ title: "A Diabetes Classifier"
 
 **Goal**: The goal of this project is to develop a good conservative diabetes classifier. Conservative here is in the sense that we'd like to have a maximize recall. Good is in the sense that we still want our classifier to have reasonable accuracy.
 
-**Results**: A number of different classifiers with a number of feature engineering approaches performing at varying recall levels. The Logistic Regression model resulting from this project performs with 81 percent recall and 77 percent accuracy on the test set, and this model is deployed as a flask application on Heroku. Feel free to check it out in the links below.
+**Results**: A number of different classifiers with a number of feature engineering approaches performing at varying recall levels. The Logistic Regression model resulting from this project performs with 84 percent recall and 76 percent accuracy on the test set, and this model is deployed as a flask application on Heroku. Feel free to check it out in the links below.
 
 ## Some useful links
 - [The Heroku application](https://diabetes-ml-classifier-jc.herokuapp.com/) that is deployed from this project
@@ -46,8 +46,8 @@ The [jupyter notebook](https://github.com/jcummingsutk/diabetes_ml_classifier/bl
 
 - Gradient Boosting:
     * All data numerical:
-        * Recall: 63%
-        * Accuracy: 77%
+        * Recall: 74%
+        * Accuracy: 81%
     * One-Hot on just Age
         * Recall: 73%
         * Accuracy: 80%
@@ -61,8 +61,8 @@ The [jupyter notebook](https://github.com/jcummingsutk/diabetes_ml_classifier/bl
 
 - Logistic Regression:
     * All data numerical:
-        * Recall: 81%
-        * Accuracy: 76%
+        * Recall: 76%
+        * Accuracy: 81%
     * One-Hot on just Age
         * Recall: 81%
         * Accuracy: 78%

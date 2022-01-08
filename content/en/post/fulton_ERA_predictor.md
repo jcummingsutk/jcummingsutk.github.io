@@ -7,23 +7,10 @@ title: "Predicting Housing Assistance Recipients"
 ---
 
 
-Goal: Develop a predictor for recipients of the Emergency Rent and Utility Assistance program in Fulton County.
+**Goal**: Develop a predictor for recipients of the Emergency Rent and Utility Assistance program in Fulton County.
 
-Results: A logistic regression and gradient boosting classifier that are 77% and 78% accurate on the test data set, respectively, with a geographical interpretable logistic regression coefficients. A heatmap interpretation of these coefficients corresponding to the location data is also implemented through the google maps python package.
+**Results**: A logistic regression and gradient boosting classifier that are 77% and 78% accurate on the test data set, respectively, with a geographical interpretable logistic regression coefficients. A heatmap interpretation of these coefficients corresponding to the location data is also implemented through the google maps python package.
 
-## Summary
-
-The Emergency Rent and Utility Assistance (ERA) program is a program throughout the united states that assists families that are in need of emergency assistance for rent and utilities resulting from the COVID-19 pandemic. Residents have to meet eligibility requirements by the federal government, including
-
-* One or more individuals within the household has qualified for unemployment benefits or experienced a reduction in household income, incurred significant costs, or experienced other financial hardship due, directly or indirectly, to the COVID-19 outbreak;
-* One or more individuals within the household can demonstrate a risk of experiencing homelessness or housing instability; and
-* The household’s income is at or below 80% of the area median income.
-
-An initial exploration of the data shows that when the payment program pays out, it takes on average 100 days for the person to get the money. This is a long time to wait for someone who is struggling due to the pandemic!
-
-With the above details in mind, this project aims to answer the question will I receive assistance from the ERA program?
-
-Below are some links and discussion of the 77% and 78% accurate logistic regression and gradient boosting classifiers that is built for the ERA program applicants.
 
 ## Useful Links
 
@@ -41,6 +28,18 @@ Some useful links:
 * [Dataset](https://sharefulton.fultoncountyga.gov/Health-Human-Services/Neighborly-ERA-Applications/std8-6vc9)
 
 ## Discussion
+
+The Emergency Rent and Utility Assistance (ERA) program is a program throughout the united states that assists families that are in need of emergency assistance for rent and utilities resulting from the COVID-19 pandemic. Residents have to meet eligibility requirements by the federal government, including
+
+* One or more individuals within the household has qualified for unemployment benefits or experienced a reduction in household income, incurred significant costs, or experienced other financial hardship due, directly or indirectly, to the COVID-19 outbreak;
+* One or more individuals within the household can demonstrate a risk of experiencing homelessness or housing instability; and
+* The household’s income is at or below 80% of the area median income.
+
+An initial exploration of the data shows that when the payment program pays out, it takes on average 100 days for the person to get the money. This is a long time to wait for someone who is struggling due to the pandemic!
+
+With the above details in mind, this project aims to answer the question will I receive assistance from the ERA program?
+
+Below are some links and discussion of the 77% and 78% accurate logistic regression and gradient boosting classifiers that is built for the ERA program applicants.
 
 There are a number of oddities in these data. I have contacted the data set owner to try to gain insight into the oddities, but have not received a reply. Also, the documentation is very poor. There are columns which are unclear. For example, there is a column for funding total amount, total assistance approved, and ams amount (which is the amount of the check given) and they all can differ from one another. Additionally, both the data analysis and the logistic regression predictor indicate those with a lower housing ami ratio (ratio of their rent to average locally) have a smaller chance of receiving aid. Why? People with less money likely need more aid. My hypothesis that could explain this is that there are other data that are not included that are influencing the decision. For example, there is no data indicating a recent job loss. If one lost their job and had higher rent requirements, then perhaps they would likely be approved for aid. However, if someone still kept their job and had low rent requirements, perhaps this program is not applicable to them.
 

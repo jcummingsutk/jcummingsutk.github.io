@@ -3,4 +3,4 @@ title: "About"
 #description: "A few years ago, while visiting or, rather, rummaging about Notre-Dame, the author of this book found, in an obscure nook of one of the towers, the following word, engraved by hand upon the wall: —ANANKE."
 featured_image: '/images/equations.jpg'
 ---
-I was born and raised in northeast Atlanta. While in undergrad, I 
+I was born and raised in northeast Atlanta. While in my engineering undergraduate program at Georgia Tech I discovered I had a passion for mathematics. That 
