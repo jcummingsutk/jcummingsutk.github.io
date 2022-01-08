@@ -54,7 +54,7 @@ I had planned on making these classifiers available publicly through a flask app
 # Figures from this project
 
 Here is a picture of Fulton County, for reference
-![Fulton County](https://github.com/jcummingsutk/fulton_county_ERA_applications/blob/master/img/fulton.png)
+![Fulton County](/images/fulton.png)
 
 Below you find a heatmap of the lat/long locations with the higher logistic regression coefficients in red, indicating a higher likelihood of aid received In the next cell a map of the greater atlanta area's richer and poorer neighborhoods. Firstly, our heatmap outlines the fulton county area, as expected. More importantly, we see from our heatmap that the poorer areas are more likely to receive aid, as they have the higher coefficients indicated by the more intense red coloring, and that one is less likely to receive aid if they are an applicant from the altlanta area, as the city of atlanta has its own ERA program, indicated by the light green shade.
 
@@ -62,4 +62,4 @@ Below you find a heatmap of the lat/long locations with the higher logistic regr
 
 Image showing righer and poorer neighborhoods, with poorer in blue and richer in red. Notice how the general blue areas in Fulton county line up with the red areas. Of course, the blue areas outside of Fulton do not show up on the heatmap, as this data is only for Fulton county.
 
-![Rich and Poor Neighborhoods of Atlanta](/images/high_low_income_area.jpg)
+![Rich and Poor Neighborhoods of Atlanta](/images/fulton_low_high_income.jpg)
