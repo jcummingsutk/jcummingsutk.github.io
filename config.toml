@@ -31,7 +31,7 @@ canonifyURLS = true
   description = "The last theme you'll ever need. Maybe."
   # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
   background_color_class = "bg-black"
-  featured_image = "/images/gohugo-default-sample-hero-image.jpg"
+  featured_image = "/images/stars.jpeg"
   recent_posts_number = 3
 
 [[params.ananke_socials]]
