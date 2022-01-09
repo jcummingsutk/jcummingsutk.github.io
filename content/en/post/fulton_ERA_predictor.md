@@ -9,7 +9,7 @@ title: "Predicting Housing Assistance Recipients"
 
 **Goal**: Develop a predictor for recipients of the Emergency Rent and Utility Assistance program in Fulton County.
 
-**Results**: A logistic regression and gradient boosting classifier that are 77% and 78% accurate on the test data set, respectively, with a geographical interpretable logistic regression coefficients. A heatmap interpretation of these coefficients corresponding to the location data is also implemented through the google maps python package.
+**Results**: A logistic regression and gradient boosting classifier that are 77% and 78% accurate on the test data set, respectively, with geographical interpretable logistic regression coefficients. A heatmap interpretation of these coefficients corresponding to the location data is also implemented through the google maps python package.
 
 
 ## Useful Links
