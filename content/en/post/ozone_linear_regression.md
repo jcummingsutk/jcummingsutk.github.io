@@ -3,7 +3,7 @@
 #description: ""
 featured_image: "/images/ozone_splash.jpg"
 #tags: ["scene"]
-title: "Modeling Ozone Pollution Using Linear Regression"
+title: "Modeling Ozone Pollution Using Linear Regression (in development)"
 ---
 Most of us probably remember learning about the protection that the ozone layer in the upper atmosphere lends us. However, ground level ozone has well documented negative effects. Those with Asthma are particularly at risk to it [[1]](https://www.epa.gov/ground-level-ozone-pollution/ground-level-ozone-basics). Denver has one of the worst levels of ground level ozone in the united states [[2]](https://www.denverpost.com/2021/06/16/denver-fortcollins-worst-cities-air-pollution/). It is well known that ozone is greatly affected by pollutants emitted by cars, power plants, refineries, etc. in the presence of sunlight [[3]](https://www.epa.gov/ground-level-ozone-pollution/ground-level-ozone-basics#:~:text=This%20happens%20when%20pollutants%20emitted,high%20levels%20during%20colder%20months.).
 
