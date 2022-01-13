@@ -35,5 +35,5 @@ canonifyURLS = true
   recent_posts_number = 10
 
 [[params.ananke_socials]]
-#name = "twitter"
-#url = "https://twitter.com/GoHugoIO"
+name = "linkedin"
+url = "https://www.linkedin.com/in/jtcummings04"
