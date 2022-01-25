@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Home">
 <meta itemprop=name content="Modeling Ozone Pollution Using Polynomial Ridge Regression">
 <meta itemprop=description content="Most of us probably remember learning about the protection that the ozone layer in the upper atmosphere lends us. However, ground level ozone has well documented negative effects. Those with Asthma are particularly at risk to it [1]. Denver has one of the worst levels of ground level ozone in the united states [2]. It is well known that ozone is greatly affected by pollutants emitted by cars, power plants, refineries, etc.">
-<meta itemprop=wordCount content="307">
+<meta itemprop=wordCount content="404">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Modeling Ozone Pollution Using Polynomial Ridge Regression">
 <meta name=twitter:description content="Most of us probably remember learning about the protection that the ozone layer in the upper atmosphere lends us. However, ground level ozone has well documented negative effects. Those with Asthma are particularly at risk to it [1]. Denver has one of the worst levels of ground level ozone in the united states [2]. It is well known that ozone is greatly affected by pollutants emitted by cars, power plants, refineries, etc.">
@@ -72,6 +72,26 @@ PROJECTS
 </header>
 <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Most of us probably remember learning about the protection that the ozone layer in the upper atmosphere lends us. However, ground level ozone has well documented negative effects. Those with Asthma are particularly at risk to it <a href=https://www.epa.gov/ground-level-ozone-pollution/ground-level-ozone-basics>[1]</a>. Denver has one of the worst levels of ground level ozone in the united states <a href=https://www.denverpost.com/2021/06/16/denver-fortcollins-worst-cities-air-pollution/>[2]</a>. It is well known that ozone is greatly affected by pollutants emitted by cars, power plants, refineries, etc. in the presence of sunlight <a href="https://www.epa.gov/ground-level-ozone-pollution/ground-level-ozone-basics#:~:text=This%20happens%20when%20pollutants%20emitted,high%20levels%20during%20colder%20months.">[3]</a>.</p>
 <p><strong>Goal</strong>: To develop an accurate ridge polynomial regression model to predict the amount of ozone in the air.</p>
+<p>The results from this project are deployed as a REST api on AWS elastic beanstalk. You can hit the api by using, for example, <a href=https://www.postman.com/>postman</a> to sent a GET api request to <a href=Denverozonepredictor-env.eba-phyjudqm.us-east-1.elasticbeanstalk.com>Denverozonepredictor-env.eba-phyjudqm.us-east-1.elasticbeanstalk.com</a>. It expects a json dictionary such as</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+    <span style=color:#f92672>&#34;temp&#34;</span>: <span style=color:#ae81ff>100</span>,
+    <span style=color:#f92672>&#34;humidity&#34;</span>: <span style=color:#ae81ff>0</span>,
+    <span style=color:#f92672>&#34;windspeed&#34;</span>: <span style=color:#ae81ff>5</span>,
+    <span style=color:#f92672>&#34;month&#34;</span>: <span style=color:#ae81ff>7</span>,
+    <span style=color:#f92672>&#34;sea_level_pressure&#34;</span>: <span style=color:#ae81ff>1000.8</span>,
+    <span style=color:#f92672>&#34;hour&#34;</span>: <span style=color:#ae81ff>15</span>,
+    <span style=color:#f92672>&#34;is_weekend&#34;</span>: <span style=color:#ae81ff>0</span>
+}
+</code></pre></div><p>variable descriptions:</p>
+<ul>
+<li>temp: temperature in F</li>
+<li>humidity: relative humidity percentage</li>
+<li>windspeed: wind speed in mph</li>
+<li>month: numeric value of the months</li>
+<li>sea_level_pressure: pressure in millibars</li>
+<li>hour: hour of the day (0-23)</li>
+<li>is_weekend: 0 if not the weekend, 1 if it is.</li>
+</ul>
 <p>Useful links:
 <a href=https://github.com/jcummingsutk/ozone_pollution>GitHub Page</a></p>
 <p><a href=https://github.com/jcummingsutk/ozone_pollution/blob/master/notebook.ipynb>Jupyter Notebook</a></p>
