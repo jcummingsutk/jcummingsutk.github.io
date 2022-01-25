@@ -3,7 +3,7 @@
 #description: ""
 featured_image: "/images/donuts.jpg"
 #tags: ["scene"]
-title: "A Diabetes Classifier"
+title: "A Diabetes Classifier, Flask API available via Heroku"
 ---
 
 **Goal**: The goal of this project is to develop a good conservative diabetes classifier. Conservative here is in the sense that we'd like to have a maximize recall. Good is in the sense that we still want our classifier to have reasonable accuracy.
