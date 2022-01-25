@@ -9,6 +9,28 @@ Most of us probably remember learning about the protection that the ozone layer 
 
 **Goal**: To develop an accurate ridge polynomial regression model to predict the amount of ozone in the air.
 
+The results from this project are deployed as a REST api on AWS elastic beanstalk. You can hit the api by using, for example, [postman](https://www.postman.com/) to sent a GET api request to [Denverozonepredictor-env.eba-phyjudqm.us-east-1.elasticbeanstalk.com](Denverozonepredictor-env.eba-phyjudqm.us-east-1.elasticbeanstalk.com). It expects a json dictionary such as
+```json
+{
+    "temp": 100,
+    "humidity": 0,
+    "windspeed": 5,
+    "month": 7,
+    "sea_level_pressure": 1000.8,
+    "hour": 15,
+    "is_weekend": 0
+}
+```
+variable descriptions:
+
+* temp: temperature in F
+* humidity: relative humidity percentage
+* windspeed: wind speed in mph
+* month: numeric value of the months
+* sea_level_pressure: pressure in millibars
+* hour: hour of the day (0-23)
+* is_weekend: 0 if not the weekend, 1 if it is.
+
 Useful links:
 [GitHub Page](https://github.com/jcummingsutk/ozone_pollution)
 
